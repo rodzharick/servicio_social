@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Yo soy la proyección de la mentira en que vives. Júzgame y senténciame pero siempre estaré viviendo en ti</h1>
+    <h1>Bienvenido supervisor</h1>
 </body>
 </html>

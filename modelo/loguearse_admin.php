@@ -17,7 +17,7 @@
     {
         $_SESSION['username'] = $usuario;
         //redirigir el usuario a su pagina
-        header("location: ../home.php");
+        header("location: ../home_administrador.php");
 
         /*echo "El usuario existe en la BD <br>";
         echo $resultado ['email'];*/

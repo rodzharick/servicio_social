@@ -8,6 +8,10 @@ ini_set('display_errors','1');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <img src="img/escudoColegio.png" alt="logo del colegio">
+
     <title>Servicio Social</title>
     <center>
         <h1>Bienvenido a servicio social <h1>

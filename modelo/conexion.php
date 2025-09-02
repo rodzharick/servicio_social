@@ -1,9 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors','1');
-?>
-
-<?php
     // script para crear una conexión con la BD
 
     // Parametros requeridos para la conexión con la BD
@@ -12,7 +7,7 @@ ini_set('display_errors','1');
     DEFINE('USER', 'root'); //  Crea la constante USER con valor 'root'
     DEFINE('PW', '');
     DEFINE('HOST', 'localhost');
-    DEFINE('BD', 'servicio_social');
+    DEFINE('BD', 'Servicio_Social');
 
     // Parametros BD remota (infinityfree)
     //DEFINE('USER', 'if0_39032318'); //  Crea la constante USER con valor 'root'
@@ -28,13 +23,24 @@ ini_set('display_errors','1');
 
     // Verificar la conexión con la BD
 
-if (!$conexion) 
+/*if (!$conexion) 
     {
-        die("La conexión con la BD falló: " + mysqli_error($conexion));  
+        die("La conexión con la BD falló: " .  mysqli_connect_error() );  
         exit();
-    } 
+    }*/
     /*else 
     {
         die("Conexión a la BD exitosa!"); 
     }*/
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+</body>
+</html>

@@ -93,7 +93,7 @@ ini_set('display_errors','1');
             }
         }
     }
-
+    
     // Obtener datos de acudientes para la tabla (con búsqueda si aplica)
     $query_acudientes = "SELECT * FROM acudiente";
     
@@ -117,6 +117,7 @@ ini_set('display_errors','1');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Ver Acudientes</title>
 </head>
 <body>
@@ -164,7 +165,8 @@ ini_set('display_errors','1');
                 <th>Apellidos</th>
                 <th>Documento ID</th>
                 <th>Correo</th>
-                <th>Teléfono</th>
+                <th>Teléfono</th>php
+error_
                 <th>Contraseña</th>
                 <th>Acciones</th>
             </tr>

@@ -1,0 +1,119 @@
+/* ------------------------------
+   Estilos Globales
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* ------------------------------
+   Contenedor Login
+--------------------------------*/
+.login-container {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.login-container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+/* ------------------------------
+   Campos de formulario
+--------------------------------*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    color: #374151;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 6px rgba(37,99,235,0.4);
+}
+
+/* ------------------------------
+   Botón
+--------------------------------*/
+button {
+    background: #1e40af;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* ------------------------------
+   Mensajes de error o éxito
+--------------------------------*/
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+
+/* ------------------------------
+   Animación
+--------------------------------*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

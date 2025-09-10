@@ -1,18 +1,17 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors','1');
+ini_set('display_errors', 1);
 ?>
-
 <?php
     require "conexion.php";
 
     // iniciar sesion para guardar los datos del usuario
     session_start();
 
-    $usuario = $_POST['correo'];
-    $password = $_POST['password'];
+    $usuario = $_POST['email'];
+    $contraseña = $_POST['contraseña'];
 
-    $query_1 = "SELECT correo, COUNT(*) AS contar FROM acudiente WHERE correo = '$usuario' AND contraseña = '$password'";
+    $query_1 = "SELECT correo, COUNT(*) AS contar FROM acudiente WHERE correo = '$usuario' AND contraseña = '$contraseña'";
 
     $consulta = mysqli_query($conexion, $query_1) or trigger_error("Error en la consulta MYSQL: " + mysqli_error($conexion));
 
@@ -32,15 +31,3 @@ ini_set('display_errors','1');
         echo "El usuario no existe, o hay un error en el nombre de usuario o la contraseña";
     }
 ?>
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-<body>
-    
-</body>
-</html>

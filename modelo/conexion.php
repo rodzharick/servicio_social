@@ -1,3 +1,8 @@
+
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <?php
     // script para crear una conexión con la BD
 
@@ -10,10 +15,10 @@
     DEFINE('BD', 'Servicio_Social');
 
     // Parametros BD remota (infinityfree)
-    //DEFINE('USER', 'if0_39032318'); //  Crea la constante USER con valor 'root'
-    //DEFINE('PW', 'Sebast2009');
-    //DEFINE('HOST', 'sql308.infinityfree.com');
-    //DEFINE('BD', 'f0_39032318_servicio_social');
+    /*DEFINE('USER', 'if0_38542096'); //  Crea la constante USER con valor 'root'
+    DEFINE('PW', 'Sebast2009feo');
+    DEFINE('HOST', 'sql100.infinityfree.com');
+    DEFINE('BD', 'if0_38542096_empresa');*/
 
     // Conexión con la BD
     $conexion = mysqli_connect(HOST, USER, PW, BD); 
@@ -23,24 +28,13 @@
 
     // Verificar la conexión con la BD
 
-/*if (!$conexion) 
+if (!$conexion) 
     {
-        die("La conexión con la BD falló: " .  mysqli_connect_error() );  
+        die("La conexión con la BD falló: " . mysqli_connect_error());
         exit();
-    }*/
+    } 
     /*else 
     {
         die("Conexión a la BD exitosa!"); 
     }*/
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-<body>
-    
-</body>
-</html>

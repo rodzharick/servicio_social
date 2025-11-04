@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
         <a href="modelo/login_estudiante.php">
             <button>Estudiante</button>
         </a>
-        <a href="modelo/login_supervisor.php">
+        <a href="modelo/login_supervisores.php">
             <button>Supervisor</button>
         </a>
     </div>
